@@ -1,0 +1,1 @@
+Link to GitHub repository: https://github.com/NamekianLegend/js-exercise
