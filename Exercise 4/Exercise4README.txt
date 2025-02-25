@@ -1,3 +1,17 @@
-Link to GitHub: https://github.com/NamekianLegend/JS_Debugging_Challenge_JoshLeslie/tree/main
+Instructions:
 
-Please compare my updated files vs the original files in the original repository. You will see the many errors I fixed, plus some decoration additions to present the code better!
+Analyze the Provided Code
+
+Files to Review:
+index.html
+script.js
+Objective: Carefully examine these files to locate and fix as many errors as possible. Errors may include:
+Syntax errors
+Logical errors
+Runtime errors
+Implement Your Fixes
+
+Edit the Code: Correct the identified errors to ensure the code functions as intended.
+Test Thoroughly: Run the code in a browser to verify that all issues are resolved.
+
+Link to original code: https://github.com/EGYSACA/Ex
