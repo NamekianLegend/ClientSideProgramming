@@ -40,16 +40,16 @@ console.log(returnBook(book)); // Call returnBook function
 let librarian = { // Create a librarian object
     firstName: 'Neil',
     lastName: 'Armstrong',
-    shift: 'morning',
+    _shift: 'morning',
     get fullName() { // Create a getter for the full name of the librarian
         return `${this.firstName} ${this.lastName}`; // Return the full name of the librarian
     },
     get shift() { // Create a getter for the shift hours of the librarian
-        return this.shift; // Return the shift hours of the librarian
+        return this._shift; // Return the shift hours of the librarian
     },
     set shift(newShift) { // Create a setter for the shift hours of the librarian
         if (newShift === 'morning' || newShift === 'evening') {
-        this.shift = newShift; // Set the shift hours of the librarian
+        this._shift = newShift; // Set the shift hours of the librarian
     } else {
         return 'Invalid shift hours! Please enter "morning" or "evening".'; // Return an error message if the shift hours are invalid
     }
