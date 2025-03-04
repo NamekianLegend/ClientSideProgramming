@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../Images/pages.jpg);
+    background-size: cover;
+}
+
+h2, h1, p {
+    color: #121213;
+    text-align: center;
+    margin-top: 100px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+footer {
+    padding: 5px 0;  /* Minimal padding */
+    height: auto;  /* Adjust height based on content */
+    background-color: #fff;  /* Ensure background is visible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;  /* Remove extra spacing around text */
+    padding: 0;
+}
