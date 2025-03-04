@@ -51,7 +51,7 @@ let librarian = { // Create a librarian object
         if (newShift === 'morning' || newShift === 'evening') {
         this._shift = newShift; // Set the shift hours of the librarian
     } else {
-        return 'Invalid shift hours! Please enter "morning" or "evening".'; // Return an error message if the shift hours are invalid
+        return console.log('Invalid shift hours! Please enter "morning" or "evening".'); // Return an error message if the shift hours are invalid
     }
 }
 };
