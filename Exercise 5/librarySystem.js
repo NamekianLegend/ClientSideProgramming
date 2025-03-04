@@ -40,35 +40,31 @@ console.log(returnBook(book)); // Call returnBook function
 let librarian = { // Create a librarian object
     firstName: 'Neil',
     lastName: 'Armstrong',
-    shift: 'morning'
-};
-
-function getFullName(librarian) { // Create a function to get the full name of the librarian
-    return `${librarian.firstName} ${librarian.lastName}`; // Return the full name of the librarian
-};
-
-function setShiftHours(newShift) { // Create a function to set the shift hours of the librarian
-    if (newShift === "morning" || newShift === "evening") { // Check if the shift hours are valid
-        librarian.shift = newShift; // Set the shift hours
-        return `Shift hours updated to ${librarian.shift}.`; // Return the updated shift hours
-    } else { // If the shift hours are invalid
-        return 'Invalid shift hours entered... Please enter either "morning" or "evening".'; // Return an error message
+    shift: 'morning',
+    get fullName() { // Create a getter for the full name of the librarian
+        return `${this.firstName} ${this.lastName}`; // Return the full name of the librarian
+    },
+    get shift() { // Create a getter for the shift hours of the librarian
+        return this.shift; // Return the shift hours of the librarian
+    },
+    set shift(newShift) { // Create a setter for the shift hours of the librarian
+        if (newShift === 'morning' || newShift === 'evening') {
+        this.shift = newShift; // Set the shift hours of the librarian
+    } else {
+        return 'Invalid shift hours! Please enter "morning" or "evening".'; // Return an error message if the shift hours are invalid
     }
-};
-
-function getShiftHours(librarian) { // Create a function to get the shift hours of the librarian
-    return `Shift hours are ${librarian.shift}.`; // Return the shift hours of the librarian
+}
 };
 
 console.log("\nPart 2: Creating a librarian object and calling functions...");
 console.log("===============================================");
-console.log("The librarian is, " + getFullName(librarian) + "!"); // Call getFullName function
-console.log(setShiftHours("morning")); // Call setShiftHours function
-console.log(getShiftHours(librarian)); // Call getShiftHours function
-console.log(setShiftHours("evening")); // Call setShiftHours function
-console.log(getShiftHours(librarian)); // Call getShiftHours function
-console.log(setShiftHours("night")); // Call setShiftHours function to test invalid input
-console.log(getShiftHours(librarian)); // Call getShiftHours function to test invalid input
+console.log(`The librarian's full name is ${librarian.fullName}.`); // Call the getter for fullName
+console.log(`The librarian's shift hours are ${librarian.shift}.`); // Call the getter for shift
+librarian.shift = 'evening'; // Call the setter for shift
+console.log(`The librarian's shift hours are ${librarian.shift}.`); // Call the getter for shift
+librarian.shift = 'night'; // Call the setter for shift using an invalid shift
+console.log(`The librarian's shift hours are ${librarian.shift}.`); // Call the getter for shift to see if the shift was set showing an error message
+
 
 // Part 3: Create a library object. Define a books array and a librarian object. Create 3 functions: addBook, listAvailableBooks. Call each function.
 let library = { // Create a library object
