@@ -63,7 +63,7 @@ console.log(`The librarian's shift hours are ${librarian.shift}.`); // Call the 
 librarian.shift = 'evening'; // Call the setter for shift
 console.log(`The librarian's shift hours are ${librarian.shift}.`); // Call the getter for shift
 librarian.shift = 'night'; // Call the setter for shift using an invalid shift
-console.log(`The librarian's shift hours are ${librarian.shift}.`); // Call the getter for shift to see if the shift was set showing an error message
+console.log(`The librarian's shift hours are ${librarian.shift}.`); // Call the getter for shift to see if the shift was changed after invalid input was entered
 
 
 // Part 3: Create a library object. Define a books array and a librarian object. Create 3 functions: addBook, listAvailableBooks. Call each function.
