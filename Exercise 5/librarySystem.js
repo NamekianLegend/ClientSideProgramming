@@ -30,7 +30,7 @@ function returnBook(book) { // Create a function to return the book
 
 console.log("Part 1: Creating a book object and calling functions...");
 console.log("===============================================");
-console.log(book.getDetails(book)); // Call getDetails function
+console.log(book.getDetails()); // Call getDetails function
 console.log(borrowBook(book)); // Call borrowBook function
 console.log(borrowBook(book)); // Call borrowBook function to see the message when the book is not available
 console.log(returnBook(book)); // Call returnBook function
