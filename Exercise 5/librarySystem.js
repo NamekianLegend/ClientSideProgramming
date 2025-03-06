@@ -80,12 +80,12 @@ const library = { // Create a library object
     }
 };
 
-library.addBook({ title: 'The Hobbit', author: 'J.R.R. Tolkien', available: true }); // Add a book to the library
-library.addBook({ title: 'The Fellowship of the Ring', author: 'J.R.R. Tolkien', available: false }); // Add a book to the library
-library.addBook({ title: 'The Two Towers', author: 'J.R.R. Tolkien', available: true }); // Add a book to the library
-library.addBook({ title: 'The Return of the King', author: 'J.R.R. Tolkien', available: false }); // Add a book to the library
-library.addBook({ title: 'Project Hail Mary', author: 'Andy Weir', available: true }); // Add a book to the library
-library.addBook({ title: 'Artemis', author: 'Andy Weir', available: true }); // Add a book to the library
+console.log(library.addBook({ title: 'The Hobbit', author: 'J.R.R. Tolkien', available: true })); // Add a book to the library
+console.log(library.addBook({ title: 'The Fellowship of the Ring', author: 'J.R.R. Tolkien', available: false })); // Add a book to the library
+console.log(library.addBook({ title: 'The Two Towers', author: 'J.R.R. Tolkien', available: true })); // Add a book to the library
+console.log(library.addBook({ title: 'The Return of the King', author: 'J.R.R. Tolkien', available: false })); // Add a book to the library
+console.log(library.addBook({ title: 'Project Hail Mary', author: 'Andy Weir', available: true })); // Add a book to the library
+console.log(library.addBook({ title: 'Artemis', author: 'Andy Weir', available: true })); // Add a book to the library
 
 console.log("\nPart 3: Creating a library object and calling functions...");
 console.log("===============================================");
