@@ -75,8 +75,7 @@ const library = { // Create a library object
         return `${book.title} has been added to the library!`; // Return a success message
     },
     listAvailableBooks: function() { // Create a function to list available books in the library
-        let availableBooks = this.books.filter(book => book.available); // Filter the books array to get available books
-        return availableBooks.map(book => book.title); // Return an array of available book titles
+        return this.books.filter(book => book.available).map(book => book.title); // Filter and return an array of available book titles
     }
 };
 
