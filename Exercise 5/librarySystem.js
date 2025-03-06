@@ -3,11 +3,11 @@
 const book = { // Create a book object
     title: 'The Martian', 
     author: 'Andy Weir',
-    available: true
-};
+    available: true,
 
-function getDetails(book) { // Create a function to get details of the book
+    getDetails: function (book) { // Create a function to get details of the book
     return `"${book.title}" authored by ${book.author}.`; // Return the title and author of the book
+    }
 };
 
 function borrowBook(book) { // Create a function to borrow the book
