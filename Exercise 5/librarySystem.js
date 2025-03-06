@@ -1,6 +1,6 @@
 // Create a librarySystem that allows you to check in, check out, and search for books in a library.
 // Part 1: Create a book object. Create 3 functions: getDetails, borrowBook, returnBook. Call each function.
-let book = { // Create a book object
+const book = { // Create a book object
     title: 'The Martian', 
     author: 'Andy Weir',
     available: true
@@ -32,12 +32,12 @@ console.log("Part 1: Creating a book object and calling functions...");
 console.log("===============================================");
 console.log("The book is, " + getDetails(book)); // Call getDetails function
 console.log(borrowBook(book)); // Call borrowBook function
-console.log(borrowBook(book)); // Call borrowBook function
+console.log(borrowBook(book)); // Call borrowBook function to see the message when the book is not available
 console.log(returnBook(book)); // Call returnBook function
-console.log(returnBook(book)); // Call returnBook function
+console.log(returnBook(book)); // Call returnBook function to see the message when the book is already returned
 
 // Part 2: Create a librarian object. Create 2 functions: Getter for fullName of librarian, setter shiftHours for librarian. Call each function.
-let librarian = { // Create a librarian object
+const librarian = { // Create a librarian object
     firstName: 'Neil',
     lastName: 'Armstrong',
     _shift: 'morning',
@@ -67,7 +67,7 @@ console.log(`The librarian's shift hours are ${librarian.shift}.`); // Call the 
 
 
 // Part 3: Create a library object. Define a books array and a librarian object. Create 3 functions: addBook, listAvailableBooks. Call each function.
-let library = { // Create a library object
+const library = { // Create a library object
     books: [], // Create an empty array to store books
     librarian: librarian, // Add the librarian object to the library
     addBook: function(book) { // Create a function to add a book to the library
