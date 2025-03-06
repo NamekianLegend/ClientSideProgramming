@@ -6,7 +6,7 @@ const book = { // Create a book object
     available: true,
 
     getDetails: function (book) { // Create a function to get details of the book
-    return `"${book.title}" authored by ${book.author}.`; // Return the title and author of the book
+    return `Title: ${book.title}, Author: ${book.author}, Is it available: ${book.available}`; // Return the title and author of the book
     }
 };
 
