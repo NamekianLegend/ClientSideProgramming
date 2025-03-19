@@ -5,7 +5,7 @@ const book = { // Create a book object
     author: 'Andy Weir',
     available: true,
 
-    getDetails: function (book) { // Create a function to get details of the book
+    getDetails(book) { // Create a function to get details of the book
     return `Title: ${book.title}, Author: ${book.author}, Is it available: ${book.available}`; // Return the title and author of the book
     }
 };
@@ -66,15 +66,15 @@ librarian.shift = 'night'; // Call the setter for shift using an invalid shift
 console.log(`The librarian's shift hours are ${librarian.shift}.`); // Call the getter for shift to see if the shift was changed after invalid input was entered
 
 
-// Part 3: Create a library object. Define a books array and a librarian object. Create 3 functions: addBook, listAvailableBooks. Call each function.
+// Part 3: Create a library object. Define a books array and a librarian object. Create 2 functions: addBook, listAvailableBooks. Call each function.
 const library = { // Create a library object
     books: [], // Create an empty array to store books
     librarian: librarian, // Add the librarian object to the library
-    addBook: function(book) { // Create a function to add a book to the library
+    addBook(book) { // Create a function to add a book to the library
         this.books.push(book); // Add the book to the books array
         return `${book.title} has been added to the library!`; // Return a success message
     },
-    listAvailableBooks: function() { // Create a function to list available books in the library
+    listAvailableBooks() { // Create a function to list available books in the library
         return this.books.filter(book => book.available).map(book => book.title); // Filter and return an array of available book titles
     }
 };
